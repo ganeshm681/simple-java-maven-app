@@ -1,7 +1,7 @@
 node{
       
     echo "checkout code from github account"
-      def Branch = env.BRANCH_NAME
+      def Branch =  `echo git rev-parse --abbrev-ref HEAD`
        echo "Branch Name is ${Branch}"
    stage 'checkout'
          
