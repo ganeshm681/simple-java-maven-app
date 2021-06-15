@@ -8,4 +8,7 @@ echo "build starts"
    def mvnHome = tool 'Maven 3'
    stage 'build'
    sh "${mvnHome}/bin/mvn -B -DskipTests clean package"
+
+echo "build completed"
+
 }
