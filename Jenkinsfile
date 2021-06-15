@@ -4,5 +4,5 @@ node{
 echo "build starts"
     
    stage 'build'
-   sh '\'${MAVEN-HOME}/bin/mvn -B -DskipTests clean package\''
+   sh "${mvnHome}/bin/mvn -B -DskipTests clean package"
 }
